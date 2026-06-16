@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(python3 -m markitdown \"/Users/theinhtikeaung/Downloads/SneakerLab_Presentation.pptx\")",
+      "Bash(which libreoffice *)",
+      "Read(//private/tmp/dmix_docx/**)",
+      "Bash(node generate.js)",
+      "Bash(ls -lh /Users/theinhtikeaung/Downloads/K.MATE_D-MIX_신청서_2026.docx)",
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "Bash(jobs)",
+      "Read(//Users/theinhtikeaung/nova-class-frontend/**)",
+      "Read(//Users/theinhtikeaung/nova-api/**)",
+      "Bash(echo \".env\")",
+      "Bash(cat)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'Initial commit: NOVA CLASS Python AI Service \\(K.MATE\\) *)"
+    ]
+  }
+}
