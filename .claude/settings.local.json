@@ -16,7 +16,24 @@
       "Bash(cat)",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git commit -m 'Initial commit: NOVA CLASS Python AI Service \\(K.MATE\\) *)"
+      "Bash(git commit -m 'Initial commit: NOVA CLASS Python AI Service \\(K.MATE\\) *)",
+      "Bash(gh repo *)",
+      "Read(//Users/theinhtikeaung/**)",
+      "Bash(zip -r /Users/theinhtikeaung/Downloads/NOVA_CLASS_Victoria.zip nova-class-frontend nova-api nova_rag --exclude */node_modules/* --exclude */.venv/* --exclude */__pycache__/* --exclude */.git/* --exclude */.env --exclude *.pyc --exclude */dist/*)",
+      "Bash(rm /Users/theinhtikeaung/Downloads/NOVA_CLASS_Victoria.zip)",
+      "Bash(zip -r /Users/theinhtikeaung/Downloads/NOVA_CLASS_Victoria.zip nova-class-frontend/src nova-class-frontend/CLAUDE.md nova-class-frontend/package.json nova-class-frontend/index.html nova-class-frontend/vite.config.js nova-api/src nova-api/CLAUDE.md nova-api/package.json nova-api/index.js nova-api/demo.html nova_rag/scripts nova_rag/CLAUDE.md --exclude */__pycache__/* --exclude *.pyc --exclude nova-class-frontend/src/assets/*.png --exclude nova-class-frontend/src/assets/*.svg)",
+      "Bash(unzip -l /Users/theinhtikeaung/Downloads/NOVA_CLASS_Victoria.zip)",
+      "Bash(pkill -f \"node index.js\")",
+      "Bash(pkill -f \"ai_service\")",
+      "Read(//private/tmp/**)",
+      "Bash(zip -u /Users/theinhtikeaung/Downloads/NOVA_CLASS_Victoria.zip VICTORIA_TASKS.md)",
+      "Bash(curl -s -X POST http://localhost:8082/quiz/check -H 'Content-Type: application/json' -d '{ *)",
+      "Bash(python3 -m json.tool)",
+      "Bash(mysql -u root -proot1234)",
+      "Bash(mysql -u root -proot1234 -e \"USE sneakerlab; SELECT * FROM pos_users;\")",
+      "Bash(nohup java -cp \"bin:lib/mysql-connector-j-9.7.0.jar\" com.sneaker.gui.SneakerLabApp)",
+      "Bash(disown)",
+      "Read(//tmp/**)"
     ]
   }
 }

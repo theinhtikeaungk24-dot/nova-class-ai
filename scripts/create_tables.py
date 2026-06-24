@@ -41,10 +41,27 @@ tables = {
             option_2    VARCHAR(500),
             option_3    VARCHAR(500),
             option_4    VARCHAR(500),
+            audio_url   VARCHAR(500) COMMENT '듣기 음성 파일 URL (listening 전용)',
             answer      TINYINT      COMMENT '정답 번호 (1~4)',
             explanation TEXT         COMMENT '해설',
             level       TINYINT      DEFAULT 2 COMMENT 'TOPIK 급수',
             created_at  DATETIME     DEFAULT CURRENT_TIMESTAMP
+        )
+    """,
+
+    # TOPIK 쓰기 문제 (서답형 — 객관식 아님)
+    "topik_writing_questions": """
+        CREATE TABLE IF NOT EXISTS topik_writing_questions (
+            id            INT AUTO_INCREMENT PRIMARY KEY,
+            exam_no       INT          NOT NULL COMMENT '시험 회차 (예: 102)',
+            question_no   INT          NOT NULL COMMENT '문제 번호 (51~54)',
+            prompt        TEXT         NOT NULL COMMENT '문제 지문/안내',
+            blank_count   TINYINT      COMMENT '빈칸 개수 (51,52번 전용)',
+            min_chars     INT          COMMENT '최소 글자 수 (53,54번 전용)',
+            max_chars     INT          COMMENT '최대 글자 수 (53,54번 전용)',
+            model_answer  TEXT         NOT NULL COMMENT '모범 답안 (Gemini 채점 기준)',
+            points        INT          NOT NULL COMMENT '배점',
+            created_at    DATETIME     DEFAULT CURRENT_TIMESTAMP
         )
     """,
 
